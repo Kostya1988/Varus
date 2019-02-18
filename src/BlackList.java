@@ -2,20 +2,16 @@ import java.util.List;
 
 public class BlackList {
 
-   public ListofName Selectionmethod(List<ListofName> whitelist, String Email) {
+    public boolean selectionMethod(List<ListofName> whitelist, String Email) {
+        boolean isCheck = false;
         for (ListofName listofName : whitelist) {
-            if( listofName.getEmail().equalsIgnoreCase(Email) ){
+            if (listofName.getEmail().equalsIgnoreCase(Email)) {
                 System.out.println("Этот человек находится в белом списке");
-            } else {
-                System.out.println("Этому пользователю вход запрещен");
+                isCheck = true;
             }
-            return listofName;
         }
-        return null;
+        return isCheck;
     }
-
-   
 }
-
 
 

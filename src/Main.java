@@ -13,7 +13,7 @@ public class Main {
             prop.load(fileIn);
             CheckList.getLogic(prop);
             BlackList blackList = new BlackList();
-            blackList.Selectionmethod(CheckList.getLogic(prop), "1111");
+            blackList.selectionMethod(CheckList.getLogic(prop), "1111");
 
 
         } catch (IOException ex) {
