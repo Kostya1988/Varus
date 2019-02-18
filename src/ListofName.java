@@ -2,13 +2,6 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class ListofName {
-
-
-        
-
-    
-
-
     private String name;
     private String lastName;
     private String email;

@@ -2,14 +2,14 @@ import java.util.List;
 
 public class BlackList {
 
-    ListofName QQ(List<ListofName> whitelist, String name) {
-        for (ListofName lf : whitelist) {
-            if( lf.getEmail().equalsIgnoreCase(name) ){
+   public ListofName Selectionmethod(List<ListofName> whitelist, String Email) {
+        for (ListofName listofName : whitelist) {
+            if( listofName.getEmail().equalsIgnoreCase(Email) ){
                 System.out.println("Этот человек находится в белом списке");
             } else {
                 System.out.println("Этому пользователю вход запрещен");
             }
-            return lf;
+            return listofName;
         }
         return null;
     }

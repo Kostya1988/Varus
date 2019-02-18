@@ -12,8 +12,8 @@ public class Main {
             Properties prop = new Properties();
             prop.load(fileIn);
             CheckList.getLogic(prop);
-            BlackList ww = new BlackList();
-            ww.QQ(CheckList.getLogic(prop), "1111");
+            BlackList blackList = new BlackList();
+            blackList.Selectionmethod(CheckList.getLogic(prop), "1111");
 
 
         } catch (IOException ex) {
