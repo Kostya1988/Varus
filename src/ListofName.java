@@ -22,7 +22,7 @@ public class ListofName {
         this.lastName = lastName;
     }
 
-    public String getName() {
+    public String getName(String vita) {
         return name;
     }
 
