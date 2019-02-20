@@ -6,7 +6,7 @@ public class BlackList {
         boolean isCheck = false;
         for (ListofName listofName : whitelist) {
             if (listofName.getEmail().equalsIgnoreCase(Email)) {
-                System.out.println("Этот человек находится в белом списке");
+                System.out.println("This person is on the white list");
                 isCheck = true;
             }
         }

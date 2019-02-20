@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 public class ListofName {
     private String name;
@@ -22,22 +20,21 @@ public class ListofName {
         this.lastName = lastName;
     }
 
-    public String getName(String vita) {
-        return name;
-    }
+    public String getName() {
+        return name;          }
 
     public void setName(String name) {
         this.name = name;
     }
 
     @Override
-         public String toString(){
-        return  "\n whitelist { "+ "firstName= " + name +
-                " lastName= " + lastName  +
-                " email= " + email  +
+    public String toString() {
+        return "\n whitelist { " + "firstName= " + name +
+                " lastName= " + lastName +
+                " email= " + email +
                 '}';
 
-        }
     }
+}
 
 

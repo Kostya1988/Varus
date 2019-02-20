@@ -1,14 +1,24 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 public class RemoveCustumer {
 
-    public void clientRemove(List<ListofName> whitelist) {
+    void clientRemove(List<ListofName> whitelist, String name) {
         try {
-            System.out.println("Remove client " + whitelist.get(0));
-            whitelist.remove(0);
-            System.out.println(whitelist.toString());
-        } catch (Exception e) {
-            e.printStackTrace();
+            for (Iterator<ListofName> iterator = whitelist.iterator(); iterator.hasNext();) {
+            ListofName listofName = iterator.next();
+                if (listofName.getName().equalsIgnoreCase(name)) {
+            iterator.remove();
+                    System.out.println(whitelist.toString());
+             }
+         }
+            } catch(Exception e){
+                e.printStackTrace();
+            }
         }
     }
-}
+
+       
+
